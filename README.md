@@ -1,16 +1,50 @@
-# mst_chat
+# Dedi MST Helpdesk Chat Apps
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+A Flutter app built with **Clean Architecture** + 
 
-This project is a starting point for a Flutter application.
+- **Flutter Version:** 3.32.6
+- **Dart SDK:** 3.8.1
 
-A few resources to get you started if this is your first Flutter project:
+- **State Management:** Cubit
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Requirements
+
+- Flutter **3.32.6** (recommended to use FVM for version pinning)
+- Dart **3.8.1**
+
+## Quick Start
+
+```bash
+# If you use FVM
+fvm use 3.32.6
+fvm flutter --version
+
+# Install dependencies
+fvm flutter pub get
+
+# Generate Build Runners
+fvm dart run build_runner build --delete-conflicting-outputs
+
+# Run on a device/emulator
+fvm flutter run
+```
+
+If you are not using FVM, replace `fvm flutter` with `flutter`.
+
+## Environment Variable
+
+```bash
+# Open AI Key
+OPENAI_API_KEY = 'sk---your-openai-api-key'
+
+
+```
+
+## Project Highlights
+
+
+- **State Management:** `cubit` for reactive UI states; `equatable` for value equality
+- **Local Storage:** Hive for cache-first
