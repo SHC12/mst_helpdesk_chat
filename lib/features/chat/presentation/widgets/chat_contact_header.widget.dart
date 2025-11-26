@@ -46,17 +46,6 @@ class ChatContactHeaderWidget extends StatelessWidget {
                   ],
                 ),
               ),
-              // if (contact.isOpen)
-              //   Container(
-              //     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-              //     decoration: BoxDecoration(color: Colors.teal.shade100, borderRadius: BorderRadius.circular(16)),
-              //     child: Text(
-              //       'Open',
-              //       style: Theme.of(
-              //         context,
-              //       ).textTheme.labelSmall?.copyWith(color: Colors.teal.shade800, fontWeight: FontWeight.w600),
-              //     ),
-              //   ),
             ],
           ),
         );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mst_chat/core/theme/colors.dart';
 
 import '../cubit/chat_cubit.dart';
 import '../cubit/chat_state.dart';
@@ -48,8 +49,8 @@ class _ChatInputState extends State<ChatInput> {
                   enabled: !isSending,
                   textInputAction: TextInputAction.send,
                   onSubmitted: (_) => _send(),
-                  decoration: const InputDecoration(
-                    fillColor: Colors.white,
+                  decoration: InputDecoration(
+                    fillColor: whiteColor,
                     filled: true,
                     hintText: 'Message',
                     border: OutlineInputBorder(),
@@ -61,10 +62,10 @@ class _ChatInputState extends State<ChatInput> {
               ),
               const SizedBox(width: 8),
               CircleAvatar(
-                backgroundColor: Colors.blue,
+                backgroundColor: blueColor,
                 child: IconButton(
                   onPressed: isSending ? null : _send,
-                  icon: const Icon(Icons.send, color: Colors.white),
+                  icon: Icon(Icons.send, color: whiteColor),
                 ),
               ),
             ],

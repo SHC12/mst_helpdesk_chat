@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mst_chat/core/theme/colors.dart';
 
 import '../../domain/entities/chat_message.dart';
 
@@ -18,8 +19,8 @@ class MessageBubble extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isUser = message.sender == ChatSender.user;
-    final bubbleColor = isUser ? Theme.of(context).colorScheme.primary : Colors.white;
-    final textColor = isUser ? Colors.white : Colors.black87;
+    final bubbleColor = isUser ? blueColor : whiteColor;
+    final textColor = isUser ? whiteColor : Colors.black87;
     final alignment = isUser ? CrossAxisAlignment.end : CrossAxisAlignment.start;
 
     return Padding(
